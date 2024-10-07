@@ -1,3 +1,8 @@
-<x-admin.layout>
-    <h1>Welcome to the Admin Dashboard</h1>
-</x-admin.layout>
+@extends('alayout')
+
+@section('title', 'Dashboard')
+
+@section('content')
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the content of the home page.</p>
+@endsection

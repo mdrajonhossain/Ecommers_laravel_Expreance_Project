@@ -1,4 +1,3 @@
-<!-- {{ $slot }} -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +9,7 @@
         .rotate-60 {
             transform: rotate(30deg);
         }
+
         .sidebar {
             height: calc(100vh - 64px);
         }
@@ -59,6 +59,7 @@
                 @yield('content')                
             </div>
         </div>
+
     </div>
 
     <script>
