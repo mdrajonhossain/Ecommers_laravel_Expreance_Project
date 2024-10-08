@@ -8,6 +8,7 @@
     <button onclick="createData()" class="ml-2 text-gray-600 hover:text-gray-900">Added</button>
      
     @include('loader')
+    @include('toast')    
 @endsection
 
 
@@ -41,14 +42,33 @@
             if (result.status === 'success') {
                 console.log(result.status);
                 console.log(result.data);
+                showToast('Data added successfully!');
             } else {
                 console.error('Failed:', result.message || 'Unknown error');
+                showToast('Failed to add data!');
             }
         } catch (error) {
             console.error('Error:', error);
+            showToast('An error occurred!')
         }
         finally {
             hideLoader();
         }
     }
+
+
+
+
+
+    function showToast(message) {
+    const toast = document.getElementById('globalToast');
+    const toastMessage = document.getElementById('toastMessage');
+    
+    toastMessage.textContent = message;
+    toast.classList.remove('hidden');
+
+    setTimeout(() => {
+        toast.classList.add('hidden');
+    }, 3000);
+}
 </script>
