@@ -4,7 +4,7 @@
                     <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
                         <div class="flex items-center space-x-2">
                             <i class="fas fa-home"></i>
-                            <a href="#" class="text-white">Dashboard</a>
+                            <a href="#" class="text-white"> {{ $message }}</a>
                         </div>
                     </div>
                 </li>

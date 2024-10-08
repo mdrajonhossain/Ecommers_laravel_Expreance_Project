@@ -16,7 +16,7 @@
 <body>
     @include('layouts.header')
     <div class="md:flex">
-        @include('layouts.Leftbar')
+        @include('layouts.Leftbar',  ['message' => 'Dashboard'])
         <div class="flex-grow p-4 text-red-900">
             <div class="container mx-auto">
                 @yield('content')
