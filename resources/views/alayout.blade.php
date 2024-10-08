@@ -42,7 +42,7 @@
                 <li class="p-2 cursor-pointer" style="font-size:14px;">
                     <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
                         <div class="flex items-center space-x-2">
-                            <i class="fas fa-home"></i>
+                            <i class="fa-solid fa-layer-group"></i>
                             <a href="#" class="text-white">Catagory</a>
                         </div>
                         <span class="arrow text-white">&#10148;</span>
@@ -68,8 +68,8 @@
                 <li class="p-2 cursor-pointer" style="font-size:14px;">
                     <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
                         <div class="flex items-center space-x-2">
-                            <i class="fas fa-home"></i>
-                            <a href="#" class="text-white">Catagory</a>
+                            <i class="fa-solid fa-sitemap"></i>
+                            <a href="#" class="text-white">Items</a>
                         </div>
                         <span class="arrow text-white">&#10148;</span>
                     </div>
