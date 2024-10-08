@@ -29,42 +29,63 @@
     <div class="md:flex">
         <div class="bg-sky-900 text-white sidebar md:w-[250px] p-4 hidden md:block">
             <ul>
-            <li class="p-2 cursor-pointer">
-                    <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">                        
+                <li class="p-2 cursor-pointer">
+                    <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
                         <div class="flex items-center space-x-2">
                             <i class="fas fa-home"></i>
                             <a href="#" class="text-white">Dashboard</a>
-                        </div>                        
-                    </div>                    
+                        </div>
+                    </div>
                 </li>
 
 
                 <li class="p-2 cursor-pointer">
-                    <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">                        
+                    <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
                         <div class="flex items-center space-x-2">
                             <i class="fas fa-home"></i>
                             <a href="#" class="text-white">Catagory</a>
-                        </div>                        
+                        </div>
                         <span class="arrow text-white">&#10148;</span>
-                    </div>                    
+                    </div>
                     <ul class="submenu hidden pl-6 mt-2 space-y-2">
-                        <li><a href="#" class="block hover:bg-[#0369a1] p-2">Catagory List</a></li>
-                        <li><a href="#" class="block hover:bg-[#0369a1] p-2">Add Catagory</a></li>
+                        <li>
+                            <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                                <i class="fas fa-list"></i>
+                                <span>Catagory List</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                                <i class="fas fa-list"></i> <!-- Icon for "Catagory List" -->
+                                <span>Catagory List</span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
 
+                
                 <li class="p-2 cursor-pointer">
-                    <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">                        
+                    <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
                         <div class="flex items-center space-x-2">
                             <i class="fas fa-home"></i>
                             <a href="#" class="text-white">Catagory</a>
-                        </div>                        
+                        </div>
                         <span class="arrow text-white">&#10148;</span>
-                    </div>                    
+                    </div>
                     <ul class="submenu hidden pl-6 mt-2 space-y-2">
-                        <li><a href="#" class="block hover:bg-[#0369a1] p-2">Catagory List</a></li>
-                        <li><a href="#" class="block hover:bg-[#0369a1] p-2">Add Catagory</a></li>
+                        <li>
+                            <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                                <i class="fas fa-list"></i>
+                                <span>Catagory List</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                                <i class="fas fa-list"></i> <!-- Icon for "Catagory List" -->
+                                <span>Catagory List</span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
