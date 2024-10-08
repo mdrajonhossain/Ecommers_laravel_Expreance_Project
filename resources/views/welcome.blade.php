@@ -67,6 +67,6 @@
 
     setTimeout(() => {
         toast.classList.add('hidden');
-    }, 10000);
+    }, 2000);
 }
 </script>
