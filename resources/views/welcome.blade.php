@@ -42,7 +42,7 @@
             if (result.status === 'success') {
                 console.log(result.status);
                 console.log(result.data);
-                showToast('Data added successfully!');
+                showToast(result.message);
             } else {
                 console.error('Failed:', result.message || 'Unknown error');
                 showToast('Failed to add data!');
@@ -58,8 +58,6 @@
 
 
 
-
-
     function showToast(message) {
     const toast = document.getElementById('globalToast');
     const toastMessage = document.getElementById('toastMessage');
@@ -69,6 +67,6 @@
 
     setTimeout(() => {
         toast.classList.add('hidden');
-    }, 3000);
+    }, 10000);
 }
 </script>
