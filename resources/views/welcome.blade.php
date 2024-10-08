@@ -15,12 +15,6 @@
 
 
 <script>
-    function showLoader() {
-        document.getElementById('globalLoader').classList.remove('hidden');
-    }
-    function hideLoader() {
-        document.getElementById('globalLoader').classList.add('hidden');
-    }
     async function createData() {
         try {
             showLoader();
@@ -56,17 +50,4 @@
             hideLoader();
         }
     }
-
-
-    function showToast(message) {
-    const toast = document.getElementById('globalToast');
-    const toastMessage = document.getElementById('toastMessage');
-    
-    toastMessage.textContent = message;
-    toast.classList.remove('hidden');
-
-    setTimeout(() => {
-        toast.classList.add('hidden');
-    }, 2000);
-}
 </script>
