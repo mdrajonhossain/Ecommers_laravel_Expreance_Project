@@ -25,7 +25,6 @@
     </div>
 
 
-
+    <script src="{{ asset('js/api.js') }}"></script>
 </body>
-
 </html>
