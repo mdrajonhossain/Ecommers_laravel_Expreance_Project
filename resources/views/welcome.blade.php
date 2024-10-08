@@ -6,14 +6,22 @@
     <h1>Welcome to the Home Page</h1>
     <p>This is the content of the home page.</p>
     <button onclick="createData()" class="ml-2 text-gray-600 hover:text-gray-900">Added</button>
+     
+    @include('loader')
 @endsection
 
 
 
-
 <script>
+    function showLoader() {
+        document.getElementById('globalLoader').classList.remove('hidden');
+    }
+    function hideLoader() {
+        document.getElementById('globalLoader').classList.add('hidden');
+    }
     async function createData() {
         try {
+            showLoader();
             const response = await fetch('http://localhost:8000/api/endpoint', {
                 method: 'POST',
                 headers: {
@@ -38,6 +46,9 @@
             }
         } catch (error) {
             console.error('Error:', error);
+        }
+        finally {
+            hideLoader();
         }
     }
 </script>
