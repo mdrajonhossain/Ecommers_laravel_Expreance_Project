@@ -19,6 +19,7 @@
     
     <title>@yield('title')</title>
     @vite('resources/css/app.css')   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 
@@ -35,6 +36,6 @@
     </div>
 
 
-    <script src="{{ asset('js/api.js') }}"></script>
+    <script src="{{ asset('js/api.js') }}"></script>    
 </body>
 </html>
