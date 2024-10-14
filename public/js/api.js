@@ -1,3 +1,11 @@
+
+showLoader();
+
+$(document).ready(function() {
+    hideLoader();
+})
+
+
 async function createData() {
     try {
         showLoader();
