@@ -1,9 +1,9 @@
 
-showLoader();
+// showLoader();
 
-$(document).ready(function() {
-    hideLoader();
-})
+// $(document).ready(function() {
+//     hideLoader();
+// })
 
 
 async function createData() {
