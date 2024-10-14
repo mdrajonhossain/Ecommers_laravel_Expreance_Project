@@ -6,6 +6,16 @@
 // })
 
 
+$(document).ready(function () {
+    $('#example').DataTable({
+        responsive: true
+    });
+});
+
+
+
+
+
 async function createData() {
     try {
         showLoader();
