@@ -24,11 +24,11 @@
 
 
 
-<body>
+<body class="overflow-hidden">
     @include('layouts.header')
     <div class="md:flex">
         @include('layouts.Leftbar',  ['message' => 'Dashboard'])
-        <div class="flex-grow p-4">
+        <div class="flex-grow p-4 overflow-y-auto h-screen">
             <div class="container mx-auto">
                 @yield('content')
             </div>

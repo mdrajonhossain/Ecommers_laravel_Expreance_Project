@@ -57,56 +57,56 @@ async function createData() {
 
 
  
-// $(document).ready(function () {
-// // Data for the chart
-// const chartData = {
-//     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-//     datasets: [{
-//         label: 'Sales',
-//         data: [120, 150, 180, 220, 300, 250, 400],
-//         backgroundColor: 'rgba(75, 192, 192, 0.2)',
-//         borderColor: 'rgba(75, 192, 192, 1)',
-//         borderWidth: 2,
-//         fill: true,
-//         tension: 0.4 // For a smooth curve
-//     }]
-// };
+$(document).ready(function () {
+// Data for the chart
+const chartData = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [{
+        label: 'Sales',
+        data: [120, 150, 180, 220, 300, 250, 400],
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 2,
+        fill: true,
+        tension: 0.4 // For a smooth curve
+    }]
+};
 
 
-// // Configuration for the chart
-// const chartConfig = {
-//     type: 'line', // Chart type
-//     data: chartData,
-//     options: {
-//         responsive: true,
-//         plugins: {
-//             legend: {
-//                 display: true,
-//                 position: 'top'
-//             },
-//             tooltip: {
-//                 enabled: true
-//             }
-//         },
-//         scales: {
-//             x: {
-//                 title: {
-//                     display: true,
-//                     text: 'Months'
-//                 }
-//             },
-//             y: {
-//                 title: {
-//                     display: true,
-//                     text: 'Sales ($)'
-//                 },
-//                 beginAtZero: true
-//             }
-//         }
-//     }
-// };
+// Configuration for the chart
+const chartConfig = {
+    type: 'line', // Chart type
+    data: chartData,
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top'
+            },
+            tooltip: {
+                enabled: true
+            }
+        },
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Months'
+                }
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Sales ($)'
+                },
+                beginAtZero: true
+            }
+        }
+    }
+};
 
-// // Initialize the chart
-// const ctx = $('#salesChart')[0].getContext('2d');
-// new Chart(ctx, chartConfig);
-// });
+// Initialize the chart
+const ctx = $('#salesChart')[0].getContext('2d');
+new Chart(ctx, chartConfig);
+});
