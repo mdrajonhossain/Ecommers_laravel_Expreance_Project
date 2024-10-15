@@ -37,7 +37,7 @@
             <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-layer-group"></i>
-                    <a href="#" class="text-white">Sub-category</a>
+                    <a href="#" class="text-white">child-category</a>
                 </div>
                 <span class="arrow text-white">&#10148;</span>
             </div>
@@ -45,13 +45,13 @@
                 <li>
                     <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
                         <i class="fas fa-plus-square"></i>
-                        <span>Add Sub-category</span>
+                        <span>Add child-category</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
                         <i class="fas fa-list"></i>
-                        <span>Sub-category List</span>
+                        <span>child-category List</span>
                     </a>
                 </li>
             </ul>
