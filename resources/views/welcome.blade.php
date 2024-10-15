@@ -3,78 +3,78 @@
 @section('title', 'Dashboard')
 
 @section('content')
-             
-    @include('layouts.loader')
-    @include('layouts.toast')    
 
-    
-
-    <button onclick="createData()" class="ml-2 text-gray-600 hover:text-gray-900">Added</button>
-
-    <div class="flex flex-wrap gap-6">
-
-    <div class="flex md:w-1/4 lg:w-1/4 bg-yellow-500 p-7 text-white">
-        <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
-        <div class="flex-[4]">Product</div>
-        <div class="flex-1">10</div>
-    </div>
-
-    <div class="flex md:w-1/4 lg:w-1/4 bg-green-500 p-7 text-white">
-        <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
-        <div class="flex-[4]">Product</div>
-        <div class="flex-1">10</div>
-    </div>
+@include('layouts.loader')
+@include('layouts.toast')
 
 
-    <div class="flex md:w-1/4 lg:w-1/4 bg-blue-800 p-7 text-white">
+
+<button onclick="createData()" class="ml-2 text-gray-600 hover:text-gray-900">Added</button>
+
+<div class="flex flex-wrap gap-6">
+
+
+    <div class="flex md:w-1/4 lg:w-1/4 bg-teal-700 p-7 text-white rounded">
         <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
         <div class="flex-[4]">Product</div>
         <div class="flex-1">10</div>
     </div>
 
 
-    <div class="flex md:w-1/4 lg:w-1/4 bg-blue-800 p-7 text-white">
+    <div class="flex md:w-1/4 lg:w-1/4 bg-teal-500 p-7 text-white rounded">
         <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
         <div class="flex-[4]">Product</div>
         <div class="flex-1">10</div>
     </div>
 
 
-    <div class="flex md:w-1/4 lg:w-1/4 bg-green-800 p-7 text-white">
+    <div class="flex md:w-1/4 lg:w-1/4 bg-blue-500 p-7 text-white rounded">
+        <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
+        <div class="flex-[4]">Product</div>
+        <div class="flex-1">10</div>
+    </div>
+
+    <div class="flex md:w-1/4 lg:w-1/4 bg-yellow-500 p-7 text-white rounded">
+        <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
+        <div class="flex-[4]">Product</div>
+        <div class="flex-1">10</div>
+    </div>
+
+    <div class="flex md:w-1/4 lg:w-1/4 bg-green-500 p-7 text-white rounded">
         <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
         <div class="flex-[4]">Product</div>
         <div class="flex-1">10</div>
     </div>
 
 
-    <div class="flex md:w-1/4 lg:w-1/4 bg-teal-700 p-7 text-white">
+    <div class="flex md:w-1/4 lg:w-1/4 bg-blue-800 p-7 text-white rounded">
         <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
         <div class="flex-[4]">Product</div>
         <div class="flex-1">10</div>
     </div>
 
 
-    <div class="flex md:w-1/4 lg:w-1/4 bg-teal-500 p-7 text-white">
+    <div class="flex md:w-1/4 lg:w-1/4 bg-blue-800 p-7 text-white rounded">
         <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
         <div class="flex-[4]">Product</div>
         <div class="flex-1">10</div>
     </div>
 
 
-    <div class="flex md:w-1/4 lg:w-1/4 bg-blue-500 p-7 text-white">
+    <div class="flex md:w-1/4 lg:w-1/4 bg-green-800 p-7 text-white rounded">
         <div class="flex-1"><i class="fa-solid fa-layer-group text-2xl"></i></div>
         <div class="flex-[4]">Product</div>
         <div class="flex-1">10</div>
     </div>
 
- 
+
+
 </div>
 
-    <!-- <div class="dashboard">
+<!-- <div class="dashboard">
         <h2>Dashboard - Monthly Sales Overview</h2>
         <canvas id="salesChart"></canvas>
     </div> -->
-   
+
 
 @endsection
-
