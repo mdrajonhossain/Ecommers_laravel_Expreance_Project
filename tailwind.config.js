@@ -6,7 +6,12 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        '53': '53%', // 53% সর্বাধিক প্রস্থ
+        '23': '23%', // 23% সর্বাধিক প্রস্থ
+      },
+    },
   },
   plugins: [],
 }
