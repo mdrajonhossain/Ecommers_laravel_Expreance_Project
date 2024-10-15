@@ -72,6 +72,7 @@ const chartData = {
     }]
 };
 
+// 
 
 // Configuration for the chart
 const chartConfig = {
@@ -109,4 +110,62 @@ const chartConfig = {
 // Initialize the chart
 const ctx = $('#salesChart')[0].getContext('2d');
 new Chart(ctx, chartConfig);
+});
+
+
+
+
+
+
+ 
+$(document).ready(function () {
+    // Data for the chart
+    const chartData = {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Sales',
+            data: [120, 150, 180, 220, 300, 250, 400],
+            backgroundColor: [
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],
+            borderWidth: 1
+        }]
+    };
+
+    // Configuration for the chart
+    const chartConfig = {
+        type: 'doughnut', // Chart type
+        data: chartData,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom'
+                },
+                tooltip: {
+                    enabled: true
+                }
+            }
+        }
+    };
+
+    // Initialize the chart
+    const ctx = $('#doughnut')[0].getContext('2d');
+    new Chart(ctx, chartConfig);
 });
