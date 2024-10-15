@@ -8,7 +8,7 @@
 
         <div class="flex-grow mx-4"></div>
 
-        <div class="flex-grow mx-4">
+        <div class="flex-grow mx-4 md:block hidden">
             <div class="flex items-center bg-green-800 rounded-lg overflow-hidden">
                 <input type="text" placeholder="Search..."
                     class="flex-grow p-2 outline-none text-gray-700 placeholder-gray-400">

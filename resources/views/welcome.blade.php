@@ -66,19 +66,21 @@
         <div class="flex-[4]">Product</div>
         <div class="flex-1">10</div>
     </div>
-
 </div>
+
+
+
 
 <div class="flex flex-wrap justify-between mt-20 mb-20 gap-10">
     <div class="w-full md:w-[30%]">
         <h2 class="text-lg font-semibold mb-4">Dashboard - Monthly Sales Overview</h2>
         <div class="relative">
-            <canvas id="doughnut" class="w-full h-96"></canvas>
+            <canvas id="pieChart" class="w-full h-96"></canvas>
         </div>
     </div>
 
     <div class="w-full md:w-[60%]">
-        <h2 class="text-lg font-semibold mb-4">Dashboard - Monthly Sales Overview</h2>
+        <h2 class="text-lg font-semibold mb-4">Dashboard - Sales Data Overview</h2>
         <div class="relative">
             <canvas id="salesChart" class="w-full h-96"></canvas>
         </div>

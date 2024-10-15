@@ -114,58 +114,41 @@ new Chart(ctx, chartConfig);
 
 
 
-
-
-
  
-$(document).ready(function () {
-    // Data for the chart
-    const chartData = {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-            label: 'Sales',
-            data: [120, 150, 180, 220, 300, 250, 400],
-            backgroundColor: [
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-            ],
-            borderColor: [
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-            ],
-            borderWidth: 1
-        }]
-    };
-
-    // Configuration for the chart
-    const chartConfig = {
-        type: 'doughnut', // Chart type
-        data: chartData,
+    const ctx = document.getElementById('pieChart').getContext('2d');
+    const pieChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Sales', 'Expenses', 'Profit', 'Loss'],
+            datasets: [{
+                label: 'Monthly Overview',
+                data: [300, 150, 100, 50], // Replace with your actual data
+                backgroundColor: [
+                    'rgba(75, 192, 192, 0.6)',
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(255, 206, 86, 0.6)',
+                    'rgba(153, 102, 255, 0.6)'
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
         options: {
             responsive: true,
             plugins: {
                 legend: {
-                    display: true,
-                    position: 'bottom'
+                    position: 'top',
                 },
-                tooltip: {
-                    enabled: true
+                title: {
+                    display: true,
+                    text: 'Monthly Sales Overview'
                 }
             }
         }
-    };
-
-    // Initialize the chart
-    const ctx = $('#doughnut')[0].getContext('2d');
-    new Chart(ctx, chartConfig);
-});
+    });
+ 
