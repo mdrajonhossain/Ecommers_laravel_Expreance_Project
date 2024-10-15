@@ -21,9 +21,23 @@
         </div>
 
         <div class="flex items-center relative">
-            <div class="ml-4 flex items-center">
-                <button class="p-2 text-white"><i class="fas fa-add"></i></button>
-                <button class="p-2 text-white"><i class="fas fa-add"></i></button>
+            <div class="ml-4 flex items-center gap-2">
+
+                <!-- heart Icon -->
+                <button class="p-2 text-white relative">
+                    <i class="fas fa-heart"></i>
+                    <span class="absolute -top-1 -right-1 text-xs bg-red-600 text-white rounded-full px-1">3</span>
+                    <!-- Badge for item count -->
+                </button>
+
+                <!-- Card Icon -->
+                <button class="p-2 text-white relative">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="absolute -top-1 -right-1 text-xs bg-red-600 text-white rounded-full px-1">3</span>
+                    <!-- Badge for item count -->
+                </button>
+
+
 
                 <!-- Logout Button -->
                 <button id="logout-button" class="p-2 text-white relative">
@@ -54,8 +68,6 @@
 
     </div>
 </div>
-
-
 
 <script>
 const logoutButton = document.getElementById('logout-button');
