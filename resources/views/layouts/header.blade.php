@@ -20,13 +20,57 @@
             </div>
         </div>
 
-        <div class="flex items-center">
+        <div class="flex items-center relative">
             <div class="ml-4 flex items-center">
                 <button class="p-2 text-white"><i class="fas fa-add"></i></button>
                 <button class="p-2 text-white"><i class="fas fa-add"></i></button>
-                <button class="p-2 text-white"><i class="fas fa-sign-out-alt"></i></button>
+
+                <!-- Logout Button -->
+                <button id="logout-button" class="p-2 text-white relative">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+
+                <!-- Logout Popup -->
+                <div id="logout-popup"
+                    class="hidden absolute right-0 mt-40 w-40 rounded-md shadow-lg bg-white text-gray-800">
+                    <div class="py-1" role="none">
+                        <div class="p-4">
+                            <ul class="space-y-1">
+                                <li class="flex items-center block px-4 py-2 text-sm hover:bg-gray-100 cursor-pointer">
+                                    <i class="fas fa-user-circle mr-2"></i> Profile
+                                </li>
+                                <li class="flex items-center block px-4 py-2 text-sm hover:bg-gray-100 cursor-pointer">
+                                    <i class="fas fa-cog mr-2"></i> Setting
+                                </li>
+                                <li class="flex items-center block px-4 py-2 text-sm hover:bg-gray-100 cursor-pointer">
+                                    <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
 </div>
+
+
+
+<script>
+const logoutButton = document.getElementById('logout-button');
+const logoutPopup = document.getElementById('logout-popup');
+
+logoutButton.addEventListener('click', (event) => {
+    // Prevent closing when clicking inside the popup
+    event.stopPropagation();
+    logoutPopup.classList.toggle('hidden');
+});
+
+// Close the popup when clicking outside of it
+window.addEventListener('click', (event) => {
+    if (!logoutButton.contains(event.target) && !logoutPopup.contains(event.target)) {
+        logoutPopup.classList.add('hidden');
+    }
+});
+</script>
