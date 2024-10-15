@@ -2,9 +2,7 @@
     <div class="p-2 flex justify-between h-16 items-center gap-10">
 
         <div class="flex items-center">
-            <img class="rounded"
-                src="https://img.freepik.com/premium-vector/bird-logo-design-ai-generated_1043906-6005.jpg" width="50px"
-                alt="Logo">
+            <img class="rounded" src="{{ asset('images.png') }}" width="50px" alt="Logo">
             <div class="text-xl font-bold ml-3">BDShop</div>
         </div>
 
