@@ -1,4 +1,4 @@
-<div class="bg-sky-700 w-screen text-white">
+<div class="bg-sky-800 w-screen text-white">
     <div class="p-2 flex justify-between h-16 items-center gap-10">
 
         <div class="flex items-center">

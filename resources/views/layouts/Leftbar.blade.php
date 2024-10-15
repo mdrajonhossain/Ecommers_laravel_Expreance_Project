@@ -1,7 +1,7 @@
 <div class="bg-sky-900 text-white sidebar md:w-[250px] p-4 hidden md:block">
     <ul>
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fas fa-home"></i>
                     <a href="{{ url('/') }}" class="text-white"> {{ $message }}</a>
@@ -10,7 +10,7 @@
         </li>
 
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-list-alt"></i>
                     <a class="text-white">Category</a>
@@ -19,13 +19,13 @@
             </div>
             <ul class="submenu hidden pl-6 mt-2 space-y-2">
                 <li>
-                    <a href="{{ url('/dashboard') }}" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="{{ url('/dashboard') }}" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-th-list"></i>
                         <span>Category List</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-plus-circle"></i>
                         <span>Add Category</span>
                     </a>
@@ -34,7 +34,7 @@
         </li>
 
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-layer-group"></i>
                     <a href="#" class="text-white">child-category</a>
@@ -43,13 +43,13 @@
             </div>
             <ul class="submenu hidden pl-6 mt-2 space-y-2">
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-plus-square"></i>
                         <span>Add child-category</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-list"></i>
                         <span>child-category List</span>
                     </a>
@@ -58,7 +58,7 @@
         </li>
 
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-box"></i>
                     <a href="#" class="text-white">Products</a>
@@ -67,13 +67,13 @@
             </div>
             <ul class="submenu hidden pl-6 mt-2 space-y-2">
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-box-open"></i>
                         <span>Product List</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-plus"></i>
                         <span>Add Product</span>
                     </a>
@@ -82,7 +82,7 @@
         </li>
 
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-credit-card"></i>
                     <a href="#" class="text-white">Card</a>
@@ -91,13 +91,13 @@
             </div>
             <ul class="submenu hidden pl-6 mt-2 space-y-2">
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-ban"></i>
                         <span>Reject Card</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-cog"></i>
                         <span>Manage Card</span>
                     </a>
@@ -106,7 +106,7 @@
         </li>
 
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-credit-card"></i>
                     <a href="#" class="text-white">Card Item</a>
@@ -115,13 +115,13 @@
             </div>
             <ul class="submenu hidden pl-6 mt-2 space-y-2">
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-ban"></i>
                         <span>Reject Card Item</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-cog"></i>
                         <span>Manage Card Item</span>
                     </a>
@@ -130,7 +130,7 @@
         </li>
 
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-money-bill-wave"></i>
                     <a href="#" class="text-white">Payment Details</a>
@@ -139,7 +139,7 @@
             </div>
             <ul class="submenu hidden pl-6 mt-2 space-y-2">
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-list"></i>
                         <span>Manage Payment Details</span>
                     </a>
@@ -148,7 +148,7 @@
         </li>
 
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-shopping-cart"></i>
                     <a href="#" class="text-white">Order Items</a>
@@ -157,7 +157,7 @@
             </div>
             <ul class="submenu hidden pl-6 mt-2 space-y-2">
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-list"></i>
                         <span>Manage Order Items</span>
                     </a>
@@ -166,7 +166,7 @@
         </li>
 
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-heart"></i>
                     <a href="#" class="text-white">Wishlist</a>
@@ -175,7 +175,7 @@
             </div>
             <ul class="submenu hidden pl-6 mt-2 space-y-2">
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-list"></i>
                         <span>Manage Wishlist</span>
                     </a>
@@ -184,7 +184,7 @@
         </li>
 
         <li class="cursor-pointer" style="font-size:14px;">
-            <div class="flex justify-between items-center hover:bg-[#0369a1] p-2 submenu-toggle">
+            <div class="flex justify-between items-center hover:bg-sky-800 p-2 submenu-toggle">
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-user"></i>
                     <a href="#" class="text-white">User</a>
@@ -193,13 +193,13 @@
             </div>
             <ul class="submenu hidden pl-6 mt-2 space-y-2">
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-user-plus"></i>
                         <span>Add User</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block hover:bg-[#0369a1] p-2 flex items-center space-x-2">
+                    <a href="#" class="block hover:bg-sky-800 p-2 flex items-center space-x-2">
                         <i class="fas fa-user-friends"></i>
                         <span>User List</span>
                     </a>
